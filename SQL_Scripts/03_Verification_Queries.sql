@@ -65,3 +65,11 @@ ORDER BY l.order_id;
 SELECT *
 FROM TEST_MASTER
 ORDER BY TEST_ID;
+
+---------------------------------------------------
+-- TEST_RESULTS
+---------------------------------------------------
+
+SELECT *
+FROM TEST_RESULTS
+ORDER BY RESULT_ID;
