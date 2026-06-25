@@ -57,3 +57,11 @@ ON l.patient_id = p.patient_id
 JOIN doctors d
 ON l.doctor_id = d.doctor_id
 ORDER BY l.order_id;
+
+---------------------------------------------------
+-- TEST_MASTER
+---------------------------------------------------
+
+SELECT *
+FROM TEST_MASTER
+ORDER BY TEST_ID;
