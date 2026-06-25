@@ -81,3 +81,11 @@ ORDER BY RESULT_ID;
 SELECT *
 FROM LAB_RESULTS
 ORDER BY LAB_ID;
+
+---------------------------------------------------
+-- AUDIT_LOG
+---------------------------------------------------
+
+SELECT *
+FROM AUDIT_LOG
+ORDER BY LOG_ID;
