@@ -73,3 +73,11 @@ ORDER BY TEST_ID;
 SELECT *
 FROM TEST_RESULTS
 ORDER BY RESULT_ID;
+
+---------------------------------------------------
+-- LAB_RESULTS
+---------------------------------------------------
+
+SELECT *
+FROM LAB_RESULTS
+ORDER BY LAB_ID;
