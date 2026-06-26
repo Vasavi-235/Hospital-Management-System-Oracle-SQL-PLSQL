@@ -1,3 +1,12 @@
+/*
+=====================================================
+Hospital Management System
+Create Database Tables
+Author : Vasavi
+Database : Oracle SQL
+=====================================================
+*/
+
 ---- PATIENTS TABLE
 CREATE TABLE PATIENTS (
     PATIENT_ID NUMBER PRIMARY KEY,
