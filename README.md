@@ -103,7 +103,14 @@ SQL_Scripts/03_Verification_Queries.sql
 * Total Lab Tests
 
 ---
+## Future Enhancements
 
+- Role-based user authentication
+- Appointment reminder notifications
+- Patient medical history tracking
+- Dashboard with hospital analytics
+- Integration with Oracle APEX
+  
 ## Author
 
 **Vasavi**
