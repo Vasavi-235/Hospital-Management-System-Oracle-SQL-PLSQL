@@ -1,0 +1,17 @@
+/*
+-------------------------------------------------------
+Hospital Management System
+View : VW_HOSPITAL_SUMMARY
+Author : Vasavi
+-------------------------------------------------------
+*/
+
+CREATE OR REPLACE VIEW VW_HOSPITAL_SUMMARY AS
+SELECT
+    (SELECT COUNT(*) FROM PATIENTS) AS TOTAL_PATIENTS,
+    (SELECT COUNT(*) FROM DOCTORS) AS TOTAL_DOCTORS,
+    (SELECT COUNT(*) FROM APPOINTMENTS) AS TOTAL_APPOINTMENTS,
+    (SELECT COUNT(*) FROM BILLS) AS TOTAL_BILLS,
+    (SELECT NVL(SUM(TOTAL_AMOUNT), 0) FROM BILLS) AS TOTAL_REVENUE
+FROM DUAL;
+/
