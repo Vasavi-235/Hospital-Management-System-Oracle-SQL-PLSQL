@@ -1,118 +1,315 @@
-# Hospital Management System using Oracle SQL & PL/SQL
+# 🏥 Hospital Management System | Oracle SQL & PL/SQL
 
-A database-driven Hospital Management System developed using **Oracle SQL** and **PL/SQL**. The project demonstrates relational database design, PL/SQL programming, and reporting features for managing hospital operations.
+A comprehensive **Hospital Management System** developed using **Oracle SQL** and **PL/SQL**. This project demonstrates relational database design, SQL programming, and PL/SQL concepts by implementing a database-driven solution for managing hospital operations such as patient registration, doctor management, appointments, billing, laboratory records, and reporting.
+
+The project focuses on applying database concepts including normalization, constraints, sequences, views, packages, procedures, functions, triggers, and audit logging in a real-world healthcare scenario.
 
 ---
 
-## Features
+# 📌 Features
 
-* Patient Registration
+* Patient Registration and Management
 * Doctor Management
 * Appointment Scheduling
 * Billing Management
 * Laboratory Test Management
-* Reports and Analytics
+* Audit Logging using Triggers
+* Reporting using SQL Views
+* Stored Procedures for business operations
+* Functions for reusable business logic
 
 ---
 
-## Technologies Used
+# 🛠 Technologies Used
 
 * Oracle Database 21c
 * SQL
 * PL/SQL
+* SQL*Plus
+* Oracle Data Dictionary
 * Packages
 * Procedures
 * Functions
+* Triggers
 * Views
 * Sequences
-* Triggers
+* Constraints
 
 ---
 
-## Project Structure
+# 📂 Project Structure
 
-```text
-Hospital-Management-System-Oracle-SQL-PLSQL
+```
+Hospital-Management-System-Oracle-SQL-PLSQL/
+
 │
-├── SQL_Scripts
-│   ├── 01_Create_Tables.sql
-│   ├── 02_Insert_Data.sql
-│   └── 03_Verification_Queries.sql
+├── SQL_Scripts/
+│   ├── Create_Tables.sql
+│   ├── Insert_Data.sql
+│   ├── Constraints.sql
+│   ├── Views.sql
+│   ├── Triggers.sql
+│   ├── Sequences.sql
+│   ├── Packages.sql
+│   ├── Procedures.sql
+│   ├── Functions.sql
+│   └── Reports.sql
 │
-├── packages
-├── Views
-├── Sample_Output
-├── reports_views.sql
-├── sequences.sql
-├── screenshots.md
-└── README.md
+├── Images/
+│
+├── Sample_Output/
+│
+├── README.md
+│
+└── requirements.md
 ```
 
 ---
 
-## Database Modules
+# 🏥 Database Modules
 
-* Patient Module
-* Doctor Module
-* Appointment Module
-* Billing Module
-* Laboratory Module
+## Patient Module
+
+* Patient Registration
+* Patient Information
+* Medical History
+* Patient Search
+
+## Doctor Module
+
+* Doctor Registration
+* Department Management
+* Doctor Availability
+
+## Appointment Module
+
+* Appointment Booking
+* Appointment History
+* Appointment Status
+
+## Billing Module
+
+* Bill Generation
+* Payment Records
+* Billing Reports
+
+## Laboratory Module
+
+* Lab Test Management
+* Test Results
+* Laboratory Reports
 
 ---
 
-## Database Concepts Demonstrated
+# 🗄 Database Concepts Demonstrated
 
 * Relational Database Design
+* Entity Relationships
 * Primary Keys
 * Foreign Keys
 * Constraints
 * Sequences
 * Views
+* SQL Queries
 * PL/SQL Packages
 * Stored Procedures
 * Functions
 * Triggers
-* SQL Reports
+* Audit Logging
+* Aggregate Reports
 
 ---
 
-## How to Run
+# 📦 Packages
 
-1. Clone the repository.
-2. Open Oracle SQL Developer.
-3. Execute the scripts in the following order:
+The project uses PL/SQL packages to organize related business logic.
+
+Example package operations include:
+
+* Register Patient
+* Update Patient
+* Schedule Appointment
+* Generate Bill
+* Laboratory Operations
+
+---
+
+# ⚙ Stored Procedures
+
+The project implements stored procedures for automating database operations, including:
+
+* Patient Registration
+* Appointment Booking
+* Bill Generation
+* Laboratory Record Management
+* Data Maintenance
+
+---
+
+# 🔍 Functions
+
+Reusable PL/SQL functions are implemented to perform business calculations and validations.
+
+Examples include:
+
+* Patient Age Calculation
+* Billing Calculations
+* Data Validation Functions
+
+---
+
+# 🔄 Triggers
+
+Database triggers automate system tasks including:
+
+* Audit Logging
+* Automatic Timestamp Updates
+* Data Validation
+* Integrity Enforcement
+
+---
+
+# 👁 Views
+
+SQL views simplify reporting and data retrieval.
+
+Example reports include:
+
+* Monthly Revenue
+* Patient Billing
+* Appointment History
+* Doctor Schedule
+* Laboratory Reports
+
+---
+
+# 🔢 Sequences
+
+Oracle sequences are used to generate primary keys automatically.
+
+Examples include:
+
+* PATIENT_SEQ
+* DOCTOR_SEQ
+* APPOINTMENT_SEQ
+* BILL_SEQ
+* LAB_SEQ
+* RESULT_SEQ
+* ORDER_SEQ
+* AUDIT_SEQ
+
+---
+
+# ▶️ How to Run
+
+## Prerequisites
+
+* Oracle Database 21c (or compatible version)
+* SQL*Plus
+* Oracle SQL Developer (optional)
+
+## Steps
+
+1. Clone this repository.
 
 ```
-SQL_Scripts/01_Create_Tables.sql
-sequences.sql
-packages/
-Views/
-SQL_Scripts/02_Insert_Data.sql
-SQL_Scripts/03_Verification_Queries.sql
+git clone https://github.com/your-username/Hospital-Management-System-Oracle-SQL-PLSQL.git
+```
+
+2. Open SQL*Plus.
+
+3. Connect to Oracle Database.
+
+4. Execute the SQL scripts in the following order:
+
+```
+Create_Tables.sql
+Constraints.sql
+Sequences.sql
+Insert_Data.sql
+Packages.sql
+Procedures.sql
+Functions.sql
+Triggers.sql
+Views.sql
+Reports.sql
 ```
 
 ---
 
-## Sample Reports
+# 📊 Sample Reports
+
+The system generates reports including:
 
 * Total Patients
 * Total Doctors
 * Total Appointments
-* Total Bills
-* Total Revenue
-* Total Lab Tests
+* Department-wise Doctors
+* Monthly Revenue
+* Patient Billing Summary
+* Laboratory Test Reports
 
 ---
-## Future Enhancements
 
-- Role-based user authentication
-- Appointment reminder notifications
-- Patient medical history tracking
-- Dashboard with hospital analytics
-- Integration with Oracle APEX
-  
-## Author
+# 📷 Screenshots
+
+Repository screenshots include:
+
+* Database Tables
+* Constraints
+* Sequences
+* Packages
+* Procedures
+* Functions
+* Triggers
+* Views
+* Sample Queries
+* Sample Reports
+* SQL*Plus Output
+
+---
+
+# 🎯 Learning Outcomes
+
+This project demonstrates practical experience with:
+
+* Database Design
+* SQL Programming
+* Oracle PL/SQL
+* Relational Database Concepts
+* Stored Procedures
+* Packages
+* Functions
+* Triggers
+* Views
+* Data Integrity
+* Business Logic Implementation
+* Audit Logging
+
+---
+
+# 🚀 Future Enhancements
+
+* Role-Based Access Control
+* Appointment Reminder Notifications
+* Prescription Management
+* Pharmacy Module
+* Dashboard Reports
+* Oracle APEX Frontend
+* REST API Integration
+* Performance Optimization
+
+---
+
+# 👩‍💻 Author
 
 **Vasavi**
 
-This project was developed for learning and demonstrating Oracle SQL and PL/SQL concepts, including database design, stored procedures, packages, views, sequences, triggers, and reporting.
+Oracle SQL & PL/SQL Developer (Learning)
+
+GitHub:
+https://github.com/Vasavi-235
+
+---
+
+## ⭐ If you found this project helpful, consider giving the repository a star.
